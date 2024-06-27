@@ -1,0 +1,63 @@
+.backgroundImage {
+  background-image: url("https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 3s linear infinite;
+}
+
+/* Custom scrollbar styles */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.cool-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.5) rgba(0, 0, 0, 0.1);
+}
+
+.cool-scroll::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.cool-scroll::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+.cool-scroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #3490dc, #6574cd, #9561e2);
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.cool-scroll::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #2779bd, #5661b3, #7e3af2);
+}

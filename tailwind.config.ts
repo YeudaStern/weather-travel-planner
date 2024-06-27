@@ -13,8 +13,18 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      animation: {
+        scroll: 'scroll 3s linear infinite',
+      },
     },
   },
-  plugins: [],
+  variants: {
+    extend: {
+      scrollbar: ['rounded']
+    }
+  },
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 };
 export default config;
